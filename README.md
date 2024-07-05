@@ -1,6 +1,6 @@
 Информация по  предмету САПР ТП  СИСТЕМА проектирования  техпроцессов
 
-ссылки  на  esp32  espresif
+ссылки  на  esp32  espressif
 https://dzen.ru/video/watch/6682db0475153d43b3158250   
 https://dzen.ru/media/id/663c9e8fbe4bd00d966acf0e/web-server-dht22-bez-arduino-667f8fdc49d1170f0ebe32f1
 https://dzen.ru/media/id/663c9e8fbe4bd00d966acf0e/dht22-v-umnyi-dom-bez-arduino-6678d0d4a3ba720a98f2537c
