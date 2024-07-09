@@ -1,0 +1,57 @@
+//ѕример 3. —интезируема€ логика операторов сравнени€.
+module relational_operators_1
+(input [3:0] a, b,
+output y);
+assign y = (a == b);
+endmodule
+
+module relational_operators_2
+( input [3:0] a, b,
+output y);
+assign y = (a >= b);
+endmodule
+
+
+module condit_stmts_2
+( input a, b, c, d,
+input [1:0] sel,
+output reg y);
+always @(sel or a or b or c or d)
+case(sel)
+0: y = a;
+1: y = b;
+2: y = c;
+3: y = d;
+default: y = a;
+endcase
+endmodule
+
+
+
+\\ѕример 14. –еализаци€ простого јЋ”
+module alu
+#(parameter addab = 4Тb0000, inca = 4Тb0001, incb = 4Тb0010,
+andab = 4Тb0011, orab = 4Тb0100, nega = 4Тb0101,
+shal = 4Тb0110, shar = 4Тb0111,
+passa = 4Тb1000, passb = 4Тb1001)
+( input [7:0] a, b,
+input [3:0] opsel,
+output reg [7:0] f);
+always @(a or b or opsel)
+begin
+case (opsel)
+addab: f = a + b;
+inca: f = a + 1;
+incb: f = b + 1;
+andab: f = a & b;
+orab: f = a | b;
+27
+nega: f = !a;
+shal: f = a << 1;
+shar: f = a >> 1;
+passa: f = a;
+passb: f = b;
+default: f = 8ТbX;
+endcase
+end
+endmodule
